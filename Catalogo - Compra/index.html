@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>catalogo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="css/Fontawesome.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section-bg">
+      <div class="container">
+        <div class="products mb-5">
+          <div class="add-product-form">
+            <h3>Agregar Producto</h3>
+            <form id="addProductForm">
+              <input type="text" id="productName" placeholder="Nombre del producto" required />
+              <input type="text" id="productPrice" placeholder="Precio del producto" required />
+              <input type="text" id="productImage" placeholder="URL de la imagen" required />
+              <button type="submit" class="btn btn-primary">Agregar Producto</button>
+            </form>
+            
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="section-title">
+              <h2>Productos</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="productsContainer">
+      </div>
+        <div class="row button-center">
+          <a class="col-xl-6 centered" href="../login/index.html"
+            >cerrar sesion</a
+          >
+        </div>
+    </section>
+    <script type="module" src="script.js"></script>
+
+  </body>
+
+</html>
